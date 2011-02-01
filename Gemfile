@@ -8,9 +8,10 @@ gem 'rails', '3.0.3'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'pg'
 
-
 group :development do
   gem 'rspec-rails', '2.3.0'
+  gem 'annotate-models', '1.0.4'
+  gem 'awesome_print'
 end
 
 group :test do
