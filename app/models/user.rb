@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110201033531
+# Schema version: 20110203225531
 #
 # Table name: users
 #
@@ -10,11 +10,16 @@
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  salt               :string(255)
+#  admin              :boolean
 #
 
 require 'digest'
 
 class User < ActiveRecord::Base
+  
+  cattr_reader :per_page
+  @@per_page = 15
+
   attr_accessor :password
   attr_accessible :name, :email, :password, :password_confirmation
 
