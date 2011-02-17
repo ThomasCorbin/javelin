@@ -1,7 +1,9 @@
 require 'spec_helper'
+require 'application_helper'
 
 describe UsersController do
   render_views
+  include ApplicationHelper
 
   describe "GET 'index'" do
 
@@ -66,6 +68,13 @@ describe UsersController do
       get :new
       response.should have_selector("title", :content => "Sign up")
     end
+
+    it "should go to root when user is signed in" do
+      @user   = test_sign_in(Factory(:user))
+      get :new
+#      response.should have_selector("title", :content => "#{title 'Home'}")
+      response.should redirect_to(root_path)
+    end
   end
 
   describe "GET 'show'" do
@@ -83,7 +92,7 @@ describe UsersController do
       get :show, :id => @user
       assigns(:user).should == @user
     end
-    
+
     it "should have the right title" do
       get :show, :id => @user
       response.should have_selector("title", :content => @user.name)
@@ -99,14 +108,16 @@ describe UsersController do
       response.should have_selector("h1>img", :class => "gravatar")
     end
   end
-  
+
   describe "POST 'create'" do
 
     describe "failure" do
 
       before(:each) do
-        @attr = { :name => "", :email => "", :password => "",
-                  :password_confirmation => "" }
+        @attr   = { :name                   => "",
+                    :email                  => "",
+                    :password               => "",
+                    :password_confirmation  => "" }
       end
 
       it "should not create a user" do
@@ -124,9 +135,16 @@ describe UsersController do
         post :create, :user => @attr
         response.should render_template('new')
       end
+
+      it "should go to root when user is signed in" do
+        @user   = test_sign_in(Factory(:user))
+        post :create, :user => @attr
+#        response.should have_selector("title", :content => "#{title 'Home'}")
+        response.should redirect_to(root_path)
+      end
     end
-    
-    
+
+
     describe "success" do
 
       before(:each) do
@@ -143,20 +161,20 @@ describe UsersController do
       it "should redirect to the user show page" do
         post :create, :user => @attr
         response.should redirect_to(user_path(assigns(:user)))
-      end    
-      
+      end
+
       it "should have a welcome message" do
         post :create, :user => @attr
         flash[:success].should =~ /welcome to the sample app/i
       end
-      
+
       it "should sign the user in" do
         post :create, :user => @attr
         controller.should be_signed_in
       end
     end
   end
-  
+
   describe "GET 'edit'" do
 
     before(:each) do
@@ -178,7 +196,7 @@ describe UsersController do
       get :edit, :id => @user
       gravatar_url = "http://gravatar.com/emails"
       response.should have_selector("a", :href => gravatar_url,
-                                         :content => "change")
+                                         :content => "Change")
     end
   end
 
@@ -254,7 +272,7 @@ describe UsersController do
       end
     end
 
-    
+
     describe "for signed-in users" do
 
       before(:each) do
@@ -316,3 +334,4 @@ describe UsersController do
     end
   end
 end
+
