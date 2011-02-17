@@ -1,4 +1,5 @@
 .bundle
+workspace.xml
 db/*.sqlite3*
 log/*.log
 *.log
