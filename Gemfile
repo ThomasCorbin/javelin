@@ -13,6 +13,7 @@ gem 'haml'
 group :development do
   gem 'rspec-rails', '2.3.0'
   gem 'faker', '0.3.1'
+  gem 'ori'
 
   # run 'lp "foo"' and it will printout a table of methods and where they come from.
   gem 'looksee'
