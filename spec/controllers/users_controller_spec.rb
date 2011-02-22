@@ -54,6 +54,23 @@ describe UsersController do
         response.should have_selector("a", :href => "/users?page=2",
                                            :content => "Next")
       end
+
+      it "should NOT show the delete link for non-admin users" do
+        get :index
+
+        response.should_not have_selector("a", :href    => "/users/#{@users[2].id}",
+                                           :rel     => "nofollow",
+                                           :content => "Delete")
+      end
+
+      it "should show the delete link for admin users" do
+        @user.toggle! :admin
+        get :index
+
+        response.should have_selector("a", :href    => "/users/#{@users[2].id}",
+                                           :rel     => "nofollow",
+                                           :content => "Delete")
+      end
     end
   end
 
@@ -317,8 +334,8 @@ describe UsersController do
     describe "as an admin user" do
 
       before(:each) do
-        admin = Factory(:user, :email => "admin@example.com", :admin => true)
-        test_sign_in(admin)
+        @admin = Factory(:admin)
+        test_sign_in(@admin)
       end
 
       it "should destroy the user" do
@@ -330,6 +347,17 @@ describe UsersController do
       it "should redirect to the users page" do
         delete :destroy, :id => @user
         response.should redirect_to(users_path)
+      end
+
+      it "should not delete the current admin user" do
+        lambda do
+          delete :destroy, :id => @admin
+        end.should_not change(User, :count)
+      end
+
+      it "should reject the current admin user" do
+        delete :destroy, :id => @admin
+        flash[:error].should =~ /yourself/i
       end
     end
   end

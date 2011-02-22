@@ -1,0 +1,176 @@
+@import "fancy-buttons";
+@import "blueprint/interaction";
+
+.button { @include fancy-button(#2966a8); }
+
+/*
+.success{ @include success; }
+*/
+
+.container {
+  width: 710px;
+}
+
+body {
+  background: #cff;
+  @include blueprint-interaction;
+}
+
+header {
+  padding-top: 20px;
+
+  img {
+    padding: 1em;
+    background: #fff;
+  }
+}
+
+
+section {
+  margin-top:   1em;
+  font-size:    120%;
+  padding:      20px;
+  background:   #fff;
+
+  h1 {
+    font-size:  200%;
+  }
+}
+
+
+/* Links */
+
+@mixin hover {
+  text-decoration:          underline;
+  background:               #325986;
+  background:               -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001A31));
+  color:                    white;
+  border-radius:            .25em;
+  -moz-border-radius:       .25em;
+  -webkit-border-radius:    .25em;
+}
+
+a {
+  color:            #09c;
+  text-decoration:  none;
+
+  &:hover {
+/*
+    color:              #069;
+    text-decoration:    underline;
+*/
+    @include hover;
+  }
+
+  &:visited {
+    color: #069;
+  }
+
+  &:focus {
+    color:                    white;
+  }
+
+  &:active {
+    color:                    white;
+  }
+}
+
+
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color:     white;
+  padding:              0 0.7em;
+  white-space:          nowrap;
+
+  ul {
+    margin:             0;
+    padding:            0;
+
+    li {
+      list-style-type:  none;
+      display:          inline-block;
+      padding:          0.2em 0;
+
+      a {
+        padding:                    0 5px;
+        font-weight:                bold;
+        padding:                    .25em;
+        color:                      #325986;
+        text-decoration:            none;
+
+        &:visited {
+          color:                    #09c;
+        }
+
+        &:hover {
+          @include hover;
+        }
+
+        &:focus {
+          color:                    white;
+        }
+
+        &:active {
+          color:                    white;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+footer {
+  text-align:   center;
+  margin-top:   10px;
+  width:        710px;
+  margin-left:  auto;
+  margin-right: auto;
+
+  nav {
+    float: none;
+  }
+}
+
+
+
+.flickr_pagination {
+  text-align: center;
+  padding: .3em; }
+  .flickr_pagination a, .flickr_pagination span, .digg_pagination em {
+    padding: .2em .5em; }
+  .flickr_pagination span.disabled {
+    color: #AAA; }
+  .flickr_pagination em {
+    font-weight: bold;
+    color: #FF0084; }
+  .flickr_pagination a {
+    border: 1px solid #DDDDDD;
+    color: #0063DC;
+    text-decoration: none; }
+    .flickr_pagination a:hover, .flickr_pagination a:focus {
+      border-color: #003366;
+      background: #0063DC;
+      color: white; }
+  .flickr_pagination .page_info {
+    color: #aaa;
+    padding-top: .8em; }
+  .flickr_pagination .prev_page, .flickr_pagination .next_page {
+    border-width: 2px; }
+  .flickr_pagination .prev_page {
+    margin-right: 1em; }
+  .flickr_pagination .next_page {
+    margin-left: 1em; }
+
