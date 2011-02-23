@@ -1,5 +1,6 @@
 @import "fancy-buttons";
 @import "blueprint/interaction";
+@import "blueprint/fancy_type";
 
 .button { @include fancy-button(#2966a8); }
 
@@ -12,16 +13,34 @@
 body {
   background: #5C5C5C;
   @include blueprint-interaction;
-}
+  @include fancy-type;
 
-header {
-  padding-top: 20px;
+  header {
+    padding-top: 20px;
 
-  img {
-    padding: 1em;
-    background: #fff;
+    img {
+      padding: 1em;
+      background: #fff;
+    }
+
+    #page_title {
+      display:      block;
+/*
+      float:        right;
+*/
+      text-align:   right;
+
+      font: {
+        size:       36px;
+        family:     Helvetica, Arial, sans-serif;
+        style:      normal;
+        weight:     normal;
+      }
+    }
   }
 }
+
+
 
 
 section {
@@ -80,16 +99,19 @@ a {
 
 /* Navigation */
 
+/*
 nav {
   float: right;
 }
-
+*/
 
 
 #site_nav {
+  float:                right;
   background-color:     white;
   padding:              0 0.7em;
   white-space:          nowrap;
+  display:              inline;
 
   ul {
     margin:             0;
@@ -100,10 +122,10 @@ nav {
       list-style-type:  none;
       display:          inline-block;
       padding:          0.2em 0;
+      font-weight:                  bold;
 */
       border-left:                  1px solid #ccc;
       display:                      inline;
-      font-weight:                  bold;
       list-style-type:              none;
       margin:                       0 0 0 .25em;
       padding:                      0 0 0 .25em;
@@ -124,9 +146,11 @@ nav {
 
       a {
         padding:                    0 5px;
+/*
         font-weight:                bold;
+*/
         font-size:                  18px;
-        font-family:                sans-serif;
+        font-family:                Helvetica, Arial, sans-serif;
         padding:                    .25em;
         color:                      #8F8F8F;
         text-decoration:            none;

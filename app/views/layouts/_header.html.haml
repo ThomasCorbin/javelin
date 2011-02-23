@@ -1,5 +1,7 @@
 %header
-  = link_to logo, root_path
+  / = link_to logo, root_path
+  %h1{ :id => "page_title"} Random Musings
+  %br
   %nav.round{ :id => "site_nav"}
     %ul
       %li= link_to "Home", root_path
@@ -12,3 +14,4 @@
         %li= link_to "Sign out", signout_path, :method => :delete
       - else
         %li= link_to "Sign in", signin_path
+  %br
