@@ -1,0 +1,28 @@
+%table{ :class => "profile", :summary => "Profile information" }
+  %tr
+    %td.main
+      %h1
+        = gravatar_for @user
+        = @user.name
+      - unless @user.microposts.empty?
+        %table{ :class => "microposts", :summary => "User microposts" }
+          = render @microposts
+        = will_paginate @microposts, :class => 'flickr_pagination'
+    %td.sidebar.round
+      %table.profile_info
+        %tr
+          %td
+            %strong Name
+          %td
+            = link_to user_path(@user), @user
+        %tr
+          %td
+            %strong URL
+          %td
+            = @user.name
+        %tr
+          %td
+            %strong Microposts
+          %td
+            = @user.microposts.count
+

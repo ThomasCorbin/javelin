@@ -23,13 +23,13 @@ describe User do
     no_email_user = User.new(@attr.merge(:email => ""))
     no_email_user.should_not be_valid
   end
-  
+
   it "should reject names that are too long" do
     long_name = "a" * 51
     long_name_user = User.new(@attr.merge(:name => long_name))
     long_name_user.should_not be_valid
   end
-  
+
   it "should accept valid email addresses" do
     addresses = %w[user@foo.com THE_USER@foo.bar.org first.last@foo.jp]
     addresses.each do |address|
@@ -45,22 +45,22 @@ describe User do
       invalid_email_user.should_not be_valid
     end
   end
-  
+
   it "should reject duplicate email addresses" do
     # Put a user with given email address into the database.
     User.create!(@attr)
     user_with_duplicate_email = User.new(@attr)
     user_with_duplicate_email.should_not be_valid
   end
-  
+
   it "should reject email addresses identical up to case" do
     upcased_email = @attr[:email].upcase
     User.create!(@attr.merge(:email => upcased_email))
     user_with_duplicate_email = User.new(@attr)
     user_with_duplicate_email.should_not be_valid
   end
-  
-  
+
+
   describe "password validations" do
 
     it "should require a password" do
@@ -104,14 +104,14 @@ describe User do
 
       it "should be true if the passwords match" do
         @user.has_password?(@attr[:password]).should be_true
-      end    
+      end
 
       it "should be false if the passwords don't match" do
         @user.has_password?("invalid").should be_false
-      end 
+      end
     end
-    
-    
+
+
     describe "authenticate method" do
 
       it "should return nil on email/password mismatch" do
@@ -150,5 +150,28 @@ describe User do
       @user.should be_admin
     end
   end
-end
 
+  describe "micropost associations" do
+
+    before(:each) do
+      @user = User.create(@attr)
+      @mp1 = Factory(:micropost, :user => @user, :created_at => 1.day.ago)
+      @mp2 = Factory(:micropost, :user => @user, :created_at => 1.hour.ago)
+    end
+
+    it "should have a microposts attribute" do
+      @user.should respond_to(:microposts)
+    end
+
+    it "should have the right microposts in the right order" do
+      @user.microposts.should == [@mp2, @mp1]
+    end
+
+    it "should destroy associated microposts" do
+      @user.destroy
+      [@mp1, @mp2].each do |micropost|
+        Micropost.find_by_id(micropost.id).should be_nil
+      end
+    end
+  end
+end
