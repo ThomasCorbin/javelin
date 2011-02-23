@@ -1,6 +1,6 @@
 %header
   = link_to logo, root_path
-  %nav.round
+  %nav.round{ :id => "site_nav"}
     %ul
       %li= link_to "Home", root_path
       - if signed_in?

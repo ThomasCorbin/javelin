@@ -10,7 +10,7 @@
 */
 
 body {
-  background: #cff;
+  background: #5C5C5C;
   @include blueprint-interaction;
 }
 
@@ -39,7 +39,9 @@ section {
 /* Links */
 
 @mixin hover {
+/*
   text-decoration:          underline;
+*/
   background:               #325986;
   background:               -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001A31));
   color:                    white;
@@ -47,6 +49,8 @@ section {
   -moz-border-radius:       .25em;
   -webkit-border-radius:    .25em;
 }
+
+
 
 a {
   color:            #09c;
@@ -80,7 +84,9 @@ nav {
   float: right;
 }
 
-nav {
+
+
+#site_nav {
   background-color:     white;
   padding:              0 0.7em;
   white-space:          nowrap;
@@ -90,21 +96,46 @@ nav {
     padding:            0;
 
     li {
+/*
       list-style-type:  none;
       display:          inline-block;
       padding:          0.2em 0;
+*/
+      border-left:                  1px solid #ccc;
+      display:                      inline;
+      font-weight:                  bold;
+      list-style-type:              none;
+      margin:                       0 0 0 .25em;
+      padding:                      0 0 0 .25em;
+      text-align:                   right;
+      padding:                      0 .75em;
+      white-space:                  pre;
+
+      &:first-child {
+        border:                     none;
+        padding-right:              0;
+        margin-right:               0;
+      }
+
+      &:last-child {
+        padding-right:              0;
+        margin-right:               0;
+      }
 
       a {
         padding:                    0 5px;
         font-weight:                bold;
+        font-size:                  18px;
+        font-family:                sans-serif;
         padding:                    .25em;
-        color:                      #325986;
+        color:                      #8F8F8F;
         text-decoration:            none;
 
+/*
         &:visited {
           color:                    #09c;
         }
-
+*/
         &:hover {
           @include hover;
         }
@@ -122,8 +153,6 @@ nav {
 }
 
 
-
-
 .round {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
@@ -133,7 +162,7 @@ nav {
 footer {
   text-align:   center;
   margin-top:   10px;
-  width:        710px;
+  width:        910px;
   margin-left:  auto;
   margin-right: auto;
 
@@ -145,8 +174,55 @@ footer {
 
 
 .flickr_pagination {
-  text-align: center;
-  padding: .3em; }
+  text-align:           center;
+  padding:              .3em;
+
+  a, span {
+    padding:            .2em .5em;
+  }
+
+  span.disabled {
+    color:              #AAA;
+  }
+
+  em {
+    font-weight:        bold;
+    color:              #FF0084;
+  }
+
+  a {
+    border:             1px solid #DDDDDD;
+    color:              #0063DC;
+    text-decoration:    none;
+
+    &:hover, &:focus {
+/*
+      border-color:       #003366;
+      background:         #0063DC;
+      color:              white;
+*/
+      @include          hover;
+    }
+  }
+
+  .page_info {
+    color: #aaa;
+    padding-top:        .8em;
+  }
+
+  .prev_page, .next_page {
+    border-width:       2px;
+  }
+
+  .prev_page {
+    margin-right:       1em;
+  }
+
+  .next_page {
+    margin-left:        1em;
+  }
+}
+/*
   .flickr_pagination a, .flickr_pagination span, .digg_pagination em {
     padding: .2em .5em; }
   .flickr_pagination span.disabled {
@@ -171,4 +247,5 @@ footer {
     margin-right: 1em; }
   .flickr_pagination .next_page {
     margin-left: 1em; }
+*/
 
