@@ -66,13 +66,19 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="haml" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="haml-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
         <dependency name="hirb" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="hpricot" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -109,6 +115,12 @@
     <requirement>
       <requirement>
         <dependency name="rspec-rails" version="2.3.0" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby_parser" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -152,7 +164,6 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.3, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/activeresource-3.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.3, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.3, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.9, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/bundler-1.0.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.3, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/rails-3.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.10.1, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/pg-0.10.1)" level="application" />
@@ -179,6 +190,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] ori (v0.1.0, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/ori-0.1.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] compass (v0.10.6, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] fancy-buttons (v1.0.6, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] compass-960-plugin (v0.10.0, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/compass-960-plugin-0.10.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] compass-colors (v0.3.1, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/compass-colors-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.10, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/bundler-1.0.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] haml-rails (v0.3.4, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/haml-rails-0.3.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.3, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/activemodel-3.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/treetop-1.4.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/builder-2.1.2)" level="application" />
@@ -194,8 +209,9 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.7, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/arel-2.0.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.15, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/mail-2.2.15)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] compass-960-plugin (v0.10.0, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/compass-960-plugin-0.10.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] compass-colors (v0.3.1, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/compass-colors-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hpricot (v0.8.3, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/hpricot-0.8.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby_parser (v2.0.6, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/ruby_parser-2.0.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sexp_processor (v3.0.5, /home/tc/.rvm/gems/ruby-1.9.2-p136/gems/sexp_processor-3.0.5)" level="application" />
   </component>
 </module>
 
