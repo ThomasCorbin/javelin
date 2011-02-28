@@ -11,7 +11,7 @@ module ApplicationHelper
       base_title
     elsif ! @title.nil?
       "#{base_title} | #{@title}"
-    elsif
+    else
       "#{base_tite} | #{given_title}"
     end
   end

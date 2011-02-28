@@ -2,6 +2,10 @@
 # Require any additional compass plugins here.
 require 'fancy-buttons'
 
+
+#   I'm not sure why I had to add this, but now I do. Weird.
+require 'sass/plugin'
+
 project_type = :rails
 project_path = Compass::AppIntegration::Rails.root
 # Set this to the root of your project when deployed:

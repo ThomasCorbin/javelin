@@ -16,6 +16,24 @@ describe MicropostsController do
     end
   end
 
+  describe "GET 'index'" do
+
+    before(:each) do
+      @user = test_sign_in(Factory(:user))
+    end
+
+    it "should be successful" do
+      get :index, :user_id => 1
+      response.should be_success
+    end
+
+    it "should render index template" do
+      get :index, :user_id => 1
+      response.should render_template('index')
+    end
+  end
+
+
   describe "POST 'create'" do
 
     before(:each) do
