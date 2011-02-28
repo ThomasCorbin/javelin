@@ -3,7 +3,7 @@
 development:
 #  adapter: sqlite3
   adapter: postgresql
-  database: sample
+  database: javelin
   pool: 5
   timeout: 5000
 
@@ -13,13 +13,13 @@ development:
 test:
 #  adapter: sqlite3
   adapter: postgresql
-  database: sampleTest
+  database: javelinTest
   pool: 5
   timeout: 5000
 
 production:
 #  adapter: sqlite3
   adapter: postgresql
-  database: sample
+  database: javelin
   pool: 5
   timeout: 5000
