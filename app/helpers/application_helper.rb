@@ -6,7 +6,7 @@ module ApplicationHelper
 
   # return a title on a per page basis
   def title( given_title = nil )
-    base_title = "Ruby on Rails Tutorial Sample App"
+    base_title = "Javelin"
     if @title.nil?
       base_title
     elsif ! @title.nil?

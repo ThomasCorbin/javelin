@@ -2,7 +2,7 @@
 @import "blueprint/interaction";
 @import "blueprint/fancy_type";
 
-.button { @include fancy-button(#2966a8); }
+.fancy_button { @include fancy-button(#2966a8); }
 
 /*
 .container {

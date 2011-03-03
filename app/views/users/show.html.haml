@@ -4,6 +4,7 @@
       %h1
         = gravatar_for @user
         = @user.name
+        = render 'follow_form' if signed_in?
       - unless @user.microposts.empty?
         %table{ :class => "microposts", :summary => "User microposts" }
           = render @microposts
@@ -14,14 +15,25 @@
           %td
             %strong Name
           %td
-            = link_to user_path(@user), @user
+            = @user.name
         %tr
           %td
             %strong URL
           %td
-            = @user.name
+            = link_to @user.name, user_path(@user)
         %tr
           %td
             %strong Microposts
           %td
             = @user.microposts.count
+        %tr
+          %td
+            %strong Following
+          %td
+            = link_to @user.following.count, following_user_path(@user)
+        %tr
+          %td
+            %strong Followed By
+          %td
+            %span#followers.stat
+              = link_to @user.followers.count, followers_user_path(@user)

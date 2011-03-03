@@ -7,3 +7,9 @@
   %br
   %span.microposts
     = pluralize(current_user.microposts.count, "micropost")
+  %br
+  -#%span.following
+  -#  = link_to "#{current_user.following.count} following", following_user_path(@user)
+  -#%br
+  -#%span.followers
+  -#  = link_to pluralize(current_user.followers.count, "follower"), followers_user_path(@user)

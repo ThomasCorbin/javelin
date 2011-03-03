@@ -1,6 +1,6 @@
 /* incase an inverted custom gradient isn't specified */
 /* line 177, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class, .button, a.signup_button {
+.fancy-button-reset-base-class, .fancy_button, a.signup_button {
   font-family: "Lucida Grande", Lucida, Arial, sans-serif;
   background: url('/images/button_bg.png?1298855694') repeat-x bottom left;
   margin: 0;
@@ -13,17 +13,17 @@
   font-weight: bold;
 }
 /* line 165, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class::-moz-focus-inner, .button::-moz-focus-inner, a.signup_button::-moz-focus-inner {
+.fancy-button-reset-base-class::-moz-focus-inner, .fancy_button::-moz-focus-inner, a.signup_button::-moz-focus-inner {
   border: none;
   padding: 0;
 }
 /* line 168, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.fancy-button-reset-base-class:focus, .button:focus, a.signup_button:focus {
+.fancy-button-reset-base-class:focus, .fancy_button:focus, a.signup_button:focus {
   outline: none;
 }
 
 /* line 5, ../../../app/stylesheets/javelin.scss */
-.button {
+.fancy_button {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -52,11 +52,11 @@
   background-clip: padding-box;
 }
 /* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button, .button:visited {
+.fancy_button, .fancy_button:visited {
   color: white;
 }
 /* line 31, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button:hover, .button:focus {
+.fancy_button:hover, .fancy_button:focus {
   background-color: #005dc2;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #88b3e2), color-stop(10%, #3e84d0), color-stop(50%, #23578f), color-stop(50%, #205083), color-stop(100%, #2a68ac));
   background-image: -moz-linear-gradient(top, #88b3e2 0%, #3e84d0 10%, #23578f 50%, #205083 50%, #2a68ac 100%);
@@ -65,11 +65,11 @@
   text-shadow: #002042 0px 1px 1px;
 }
 /* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button:hover, .button:hover:visited, .button:focus, .button:focus:visited {
+.fancy_button:hover, .fancy_button:hover:visited, .fancy_button:focus, .fancy_button:focus:visited {
   color: white;
 }
 /* line 36, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button:active {
+.fancy_button:active {
   background-color: #0056b2;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #23578f), color-stop(30%, #255c98), color-stop(50%, #215287), color-stop(50%, #1e4b7b), color-stop(100%, #2b6bb0));
   background-image: -moz-linear-gradient(top, #23578f 0%, #255c98 30%, #215287 50%, #1e4b7b 50%, #2b6bb0 100%);
@@ -82,7 +82,7 @@
   box-shadow: #1a416b 0 0.08em 0.1em 1px inset;
 }
 /* line 116, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/fancy-buttons-1.0.6/lib/stylesheets/_fancy-buttons.sass */
-.button:active, .button:active:visited {
+.fancy_button:active, .fancy_button:active:visited {
   color: white;
 }
 

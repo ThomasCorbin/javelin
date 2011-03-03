@@ -9,6 +9,6 @@
     %br/
     = f.password_field :password
   .actions
-    = f.submit "Sign in"
+    = f.submit "Sign in", :class => 'fancy_button'
 %p
   New user? #{link_to "Sign up now!", signup_path}
