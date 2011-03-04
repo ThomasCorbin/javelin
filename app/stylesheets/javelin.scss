@@ -15,6 +15,8 @@ body {
   @include blueprint-interaction;
   @include fancy-type;
 
+  font-family:  'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
   header {
     padding-top: 20px;
 
@@ -29,7 +31,7 @@ body {
 
       font: {
         size:       36px;
-        family:     Helvetica, Arial, sans-serif;
+        /*family:     Helvetica, Arial, sans-serif;*/
         style:      normal;
         weight:     normal;
       }
@@ -184,7 +186,7 @@ nav {
         font-weight:                bold;
 */
         font-size:                  18px;
-        font-family:                Helvetica, Arial, sans-serif;
+        /*font-family:                Helvetica, Arial, sans-serif;*/
         padding:                    .25em;
         color:                      #8F8F8F;
         text-decoration:            none;

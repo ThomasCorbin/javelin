@@ -1,4 +1,5 @@
 class UserRelationshipsController < ApplicationController
+#  before_filter :add_log
   before_filter :authenticate
 
   def create

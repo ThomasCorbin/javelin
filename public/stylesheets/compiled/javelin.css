@@ -94,6 +94,7 @@
 /* line 13, ../../../app/stylesheets/javelin.scss */
 body {
   background: #5C5C5C;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body .error {
@@ -190,32 +191,32 @@ body .alt {
   font-style: italic;
   font-weight: normal;
 }
-/* line 18, ../../../app/stylesheets/javelin.scss */
+/* line 20, ../../../app/stylesheets/javelin.scss */
 body header {
   padding-top: 20px;
 }
-/* line 21, ../../../app/stylesheets/javelin.scss */
+/* line 23, ../../../app/stylesheets/javelin.scss */
 body header img {
   padding: 1em;
   background: #fff;
 }
-/* line 26, ../../../app/stylesheets/javelin.scss */
+/* line 28, ../../../app/stylesheets/javelin.scss */
 body header #page_title {
   display: block;
   text-align: right;
   font-size: 36px;
-  font-family: Helvetica, Arial, sans-serif;
+  /*family:     Helvetica, Arial, sans-serif;*/
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 41, ../../../app/stylesheets/javelin.scss */
+/* line 43, ../../../app/stylesheets/javelin.scss */
 td.main {
   width: 70%;
   padding: 1em;
 }
 
-/* line 46, ../../../app/stylesheets/javelin.scss */
+/* line 48, ../../../app/stylesheets/javelin.scss */
 td.sidebar {
   width: 30%;
   padding: 1em;
@@ -223,13 +224,13 @@ td.sidebar {
   background: #ffc;
 }
 
-/* line 53, ../../../app/stylesheets/javelin.scss */
+/* line 55, ../../../app/stylesheets/javelin.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
 
-/* line 59, ../../../app/stylesheets/javelin.scss */
+/* line 61, ../../../app/stylesheets/javelin.scss */
 section {
   margin-top: 1em;
   font-size: 120%;
@@ -237,11 +238,11 @@ section {
   background: #fff;
   witdh: 110px;
 }
-/* line 66, ../../../app/stylesheets/javelin.scss */
+/* line 68, ../../../app/stylesheets/javelin.scss */
 section h1 {
   font-size: 200%;
 }
-/* line 70, ../../../app/stylesheets/javelin.scss */
+/* line 72, ../../../app/stylesheets/javelin.scss */
 section.main {
   /*
       margin:     10em;
@@ -251,12 +252,12 @@ section.main {
 }
 
 /* Links */
-/* line 95, ../../../app/stylesheets/javelin.scss */
+/* line 97, ../../../app/stylesheets/javelin.scss */
 a {
   color: #09c;
   text-decoration: none;
 }
-/* line 99, ../../../app/stylesheets/javelin.scss */
+/* line 101, ../../../app/stylesheets/javelin.scss */
 a:hover {
   /*
       color:              #069;
@@ -272,19 +273,19 @@ a:hover {
   -moz-border-radius: .25em;
   -webkit-border-radius: .25em;
 }
-/* line 107, ../../../app/stylesheets/javelin.scss */
+/* line 109, ../../../app/stylesheets/javelin.scss */
 a:visited {
   color: #069;
 }
-/* line 111, ../../../app/stylesheets/javelin.scss */
+/* line 113, ../../../app/stylesheets/javelin.scss */
 a:focus {
   color: white;
 }
-/* line 115, ../../../app/stylesheets/javelin.scss */
+/* line 117, ../../../app/stylesheets/javelin.scss */
 a:active {
   color: white;
 }
-/* line 119, ../../../app/stylesheets/javelin.scss */
+/* line 121, ../../../app/stylesheets/javelin.scss */
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
@@ -362,7 +363,7 @@ nav {
   float: right;
 }
 */
-/* line 143, ../../../app/stylesheets/javelin.scss */
+/* line 145, ../../../app/stylesheets/javelin.scss */
 #site_nav {
   float: right;
   background-color: white;
@@ -370,12 +371,12 @@ nav {
   white-space: nowrap;
   display: inline;
 }
-/* line 150, ../../../app/stylesheets/javelin.scss */
+/* line 152, ../../../app/stylesheets/javelin.scss */
 #site_nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 154, ../../../app/stylesheets/javelin.scss */
+/* line 156, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li {
   /*
         list-style-type:  none;
@@ -392,25 +393,25 @@ nav {
   padding: 0 .75em;
   white-space: pre;
 }
-/* line 170, ../../../app/stylesheets/javelin.scss */
+/* line 172, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li:first-child {
   border: none;
   padding-right: 0;
   margin-right: 0;
 }
-/* line 176, ../../../app/stylesheets/javelin.scss */
+/* line 178, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li:last-child {
   padding-right: 0;
   margin-right: 0;
 }
-/* line 181, ../../../app/stylesheets/javelin.scss */
+/* line 183, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li a {
   padding: 0 5px;
   /*
           font-weight:                bold;
   */
   font-size: 18px;
-  font-family: Helvetica, Arial, sans-serif;
+  /*font-family:                Helvetica, Arial, sans-serif;*/
   padding: .25em;
   color: #8F8F8F;
   text-decoration: none;
@@ -420,7 +421,7 @@ nav {
           }
   */
 }
-/* line 197, ../../../app/stylesheets/javelin.scss */
+/* line 199, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li a:hover {
   /*
     text-decoration:          underline;
@@ -432,23 +433,23 @@ nav {
   -moz-border-radius: .25em;
   -webkit-border-radius: .25em;
 }
-/* line 201, ../../../app/stylesheets/javelin.scss */
+/* line 203, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li a:focus {
   color: white;
 }
-/* line 205, ../../../app/stylesheets/javelin.scss */
+/* line 207, ../../../app/stylesheets/javelin.scss */
 #site_nav ul li a:active {
   color: white;
 }
 
-/* line 214, ../../../app/stylesheets/javelin.scss */
+/* line 216, ../../../app/stylesheets/javelin.scss */
 .round {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
-/* line 220, ../../../app/stylesheets/javelin.scss */
+/* line 222, ../../../app/stylesheets/javelin.scss */
 footer {
   text-align: center;
   width: 910px;
@@ -456,36 +457,36 @@ footer {
   margin-right: auto;
   margin-top: 10px;
 }
-/* line 227, ../../../app/stylesheets/javelin.scss */
+/* line 229, ../../../app/stylesheets/javelin.scss */
 footer nav {
   float: none;
 }
 
-/* line 234, ../../../app/stylesheets/javelin.scss */
+/* line 236, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination {
   text-align: center;
   padding: .3em;
 }
-/* line 238, ../../../app/stylesheets/javelin.scss */
+/* line 240, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination a, .flickr_pagination span {
   padding: .2em .5em;
 }
-/* line 242, ../../../app/stylesheets/javelin.scss */
+/* line 244, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination span.disabled {
   color: #AAA;
 }
-/* line 246, ../../../app/stylesheets/javelin.scss */
+/* line 248, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination em {
   font-weight: bold;
   color: #FF0084;
 }
-/* line 251, ../../../app/stylesheets/javelin.scss */
+/* line 253, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination a {
   border: 1px solid #DDDDDD;
   color: #0063DC;
   text-decoration: none;
 }
-/* line 256, ../../../app/stylesheets/javelin.scss */
+/* line 258, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination a:hover, .flickr_pagination a:focus {
   /*
         border-color:       #003366;
@@ -502,20 +503,20 @@ footer nav {
   -moz-border-radius: .25em;
   -webkit-border-radius: .25em;
 }
-/* line 266, ../../../app/stylesheets/javelin.scss */
+/* line 268, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .page_info {
   color: #aaa;
   padding-top: .8em;
 }
-/* line 271, ../../../app/stylesheets/javelin.scss */
+/* line 273, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .prev_page, .flickr_pagination .next_page {
   border-width: 2px;
 }
-/* line 275, ../../../app/stylesheets/javelin.scss */
+/* line 277, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .prev_page {
   margin-right: 1em;
 }
-/* line 279, ../../../app/stylesheets/javelin.scss */
+/* line 281, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .next_page {
   margin-left: 1em;
 }
@@ -546,78 +547,78 @@ footer nav {
   .flickr_pagination .next_page {
     margin-left: 1em; }
 */
-/* line 311, ../../../app/stylesheets/javelin.scss */
+/* line 313, ../../../app/stylesheets/javelin.scss */
 h1.micropost {
   margin-bottom: 0.3em;
 }
 
-/* line 316, ../../../app/stylesheets/javelin.scss */
+/* line 318, ../../../app/stylesheets/javelin.scss */
 table.microposts {
   margin-top: 1em;
 }
-/* line 319, ../../../app/stylesheets/javelin.scss */
+/* line 321, ../../../app/stylesheets/javelin.scss */
 table.microposts tr {
   height: 70px;
 }
-/* line 322, ../../../app/stylesheets/javelin.scss */
+/* line 324, ../../../app/stylesheets/javelin.scss */
 table.microposts tr td.gravatar {
   border-top: 1px solid #ccc;
   vertical-align: top;
   width: 50px;
 }
-/* line 328, ../../../app/stylesheets/javelin.scss */
+/* line 330, ../../../app/stylesheets/javelin.scss */
 table.microposts tr td.micropost {
   border-top: 1px solid #ccc;
   vertical-align: top;
   padding-top: 10px;
 }
-/* line 333, ../../../app/stylesheets/javelin.scss */
+/* line 335, ../../../app/stylesheets/javelin.scss */
 table.microposts tr td.micropost span.timestamp {
   display: block;
   font-size: 85%;
   color: #666;
 }
 
-/* line 344, ../../../app/stylesheets/javelin.scss */
+/* line 346, ../../../app/stylesheets/javelin.scss */
 div.user_info img {
   padding-right: 0.1em;
 }
-/* line 348, ../../../app/stylesheets/javelin.scss */
+/* line 350, ../../../app/stylesheets/javelin.scss */
 div.user_info a {
   text-decoration: none;
 }
-/* line 352, ../../../app/stylesheets/javelin.scss */
+/* line 354, ../../../app/stylesheets/javelin.scss */
 div.user_info span.user_name {
   position: absolute;
 }
-/* line 356, ../../../app/stylesheets/javelin.scss */
+/* line 358, ../../../app/stylesheets/javelin.scss */
 div.user_info span.microposts {
   font-size: 80%;
 }
 
-/* line 364, ../../../app/stylesheets/javelin.scss */
+/* line 366, ../../../app/stylesheets/javelin.scss */
 form.new_micropost {
   margin-bottom: 2em;
 }
 
-/* line 368, ../../../app/stylesheets/javelin.scss */
+/* line 370, ../../../app/stylesheets/javelin.scss */
 form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
 }
 
-/* line 375, ../../../app/stylesheets/javelin.scss */
+/* line 377, ../../../app/stylesheets/javelin.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
 
-/* line 381, ../../../app/stylesheets/javelin.scss */
+/* line 383, ../../../app/stylesheets/javelin.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 385, ../../../app/stylesheets/javelin.scss */
+/* line 387, ../../../app/stylesheets/javelin.scss */
 .field_with_errors {
   margin-top: 10px;
   padding: 2px;
@@ -625,12 +626,12 @@ div.field, div.actions {
   display: table;
 }
 
-/* line 392, ../../../app/stylesheets/javelin.scss */
+/* line 394, ../../../app/stylesheets/javelin.scss */
 .field_with_errors label {
   color: #fff;
 }
 
-/* line 396, ../../../app/stylesheets/javelin.scss */
+/* line 398, ../../../app/stylesheets/javelin.scss */
 #error_explanation {
   width: 400px;
   border: 2px solid red;
@@ -640,7 +641,7 @@ div.field, div.actions {
   background-color: #f0f0f0;
 }
 
-/* line 405, ../../../app/stylesheets/javelin.scss */
+/* line 407, ../../../app/stylesheets/javelin.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -651,14 +652,14 @@ div.field, div.actions {
   color: #fff;
 }
 
-/* line 415, ../../../app/stylesheets/javelin.scss */
+/* line 417, ../../../app/stylesheets/javelin.scss */
 #error_explanation p {
   color: #333;
   margin-bottom: 0;
   padding: 5px;
 }
 
-/* line 421, ../../../app/stylesheets/javelin.scss */
+/* line 423, ../../../app/stylesheets/javelin.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;

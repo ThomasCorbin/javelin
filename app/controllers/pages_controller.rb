@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+#  before_filter :add_log
+
   def home
     @title      = 'Home'
     @micropost  = Micropost.new if signed_in?

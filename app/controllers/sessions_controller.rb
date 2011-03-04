@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+#  before_filter :add_log
+
   def new
     @title = "Sign in"
   end

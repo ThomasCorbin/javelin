@@ -33,7 +33,7 @@ describe UserRelationshipsController do
 
     it "should create a relationship using Ajax" do
       lambda do
-        xhr :post, :create, :relationship => { :followed_id => @followed }
+        xhr :post, :create, :user_relationship => { :followed_id => @followed }
         response.should be_success
       end.should change(UserRelationship, :count).by(1)
     end
