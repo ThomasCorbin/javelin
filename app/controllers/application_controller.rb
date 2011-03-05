@@ -38,11 +38,18 @@ class ApplicationController < ActionController::Base
 #    filtered_params = input_params.inject {} do |h,(k,v)|
 #     h[k] = v; h
 #    end
-    filtered_params = input_params.dup
 
-    filtered_params.delete :action
-    filtered_params.delete :controller
 
-    filtered_params
+#    filtered_params = input_params.dup
+#
+#    filtered_params.delete :action
+#    filtered_params.delete :controller
+#
+#    filtered_params
+
+    output = input_params.reject{ |key,value| key == "action" || key == "controller" }
+    logger.debug "output params: #{output}"
+
+    output
   end
 end
