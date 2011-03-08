@@ -8,7 +8,7 @@
   %body
     .container
       = render 'layouts/header'
-      %section.round{ :class => "main" }
+      %section{ :class => "main" }
         - flash.each do |key, value|
           = content_tag(:div, value, :class => "flash #{key}")
 

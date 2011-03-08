@@ -568,7 +568,7 @@ body.two-col #content {
   outline: none;
 }
 
-/* line 5, ../../../app/stylesheets/javelin.scss */
+/* line 14, ../../../app/stylesheets/javelin.scss */
 .fancy_button {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -637,9 +637,10 @@ body.two-col #content {
   width: 710px;
 }
 */
-/* line 13, ../../../app/stylesheets/javelin.scss */
+/* line 22, ../../../app/stylesheets/javelin.scss */
 body {
-  background: #5C5C5C;
+  background: #5c5c5c;
+  color: #5c5c5c;
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 /* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
@@ -737,32 +738,70 @@ body .alt {
   font-style: italic;
   font-weight: normal;
 }
-/* line 20, ../../../app/stylesheets/javelin.scss */
+/* line 30, ../../../app/stylesheets/javelin.scss */
 body header {
-  padding-top: 20px;
+  /*padding-top: 20px;*/
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #1c2834), color-stop(100%, #18222e));
+  background-image: -moz-linear-gradient(bottom, #1c2834 0%, #18222e 100%);
+  background-image: linear-gradient(bottom, #1c2834 0%, #18222e 100%);
 }
-/* line 23, ../../../app/stylesheets/javelin.scss */
+/* line 35, ../../../app/stylesheets/javelin.scss */
 body header img {
   padding: 1em;
   background: #fff;
 }
-/* line 28, ../../../app/stylesheets/javelin.scss */
+/* line 40, ../../../app/stylesheets/javelin.scss */
 body header #page_title {
   display: block;
   text-align: right;
+  color: white;
   font-size: 36px;
   /*family:     Helvetica, Arial, sans-serif;*/
   font-style: normal;
   font-weight: normal;
 }
 
-/* line 43, ../../../app/stylesheets/javelin.scss */
+/* line 55, ../../../app/stylesheets/javelin.scss */
+section {
+  margin-top: 1em;
+  padding: 20px;
+  background: #171719;
+  -moz-box-shadow: black 0 0 0.5em 0;
+  -webkit-box-shadow: black 0 0 0.5em 0;
+  -o-box-shadow: black 0 0 0.5em 0;
+  box-shadow: black 0 0 0.5em 0;
+}
+/* line 61, ../../../app/stylesheets/javelin.scss */
+section h1 {
+  font-size: 200%;
+}
+/* line 65, ../../../app/stylesheets/javelin.scss */
+section.main {
+  margin: 2em;
+  padding: 20px;
+  /*width:          920px;*/
+  /*color:          black;*/
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 1030px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html section.main {
+  overflow-x: hidden;
+}
+/* line 72, ../../../app/stylesheets/javelin.scss */
+section.main h1 {
+  margin-bottom: 0.5em;
+}
+
+/* line 79, ../../../app/stylesheets/javelin.scss */
 td.main {
   width: 70%;
   padding: 1em;
 }
 
-/* line 48, ../../../app/stylesheets/javelin.scss */
+/* line 84, ../../../app/stylesheets/javelin.scss */
 td.sidebar {
   width: 30%;
   padding: 1em;
@@ -770,40 +809,19 @@ td.sidebar {
   background: #ffc;
 }
 
-/* line 55, ../../../app/stylesheets/javelin.scss */
+/* line 91, ../../../app/stylesheets/javelin.scss */
 .profile img.gravatar {
   border: 1px solid #999;
-  margin-bottom: -15px;
-}
-
-/* line 61, ../../../app/stylesheets/javelin.scss */
-section {
-  margin-top: 1em;
-  font-size: 120%;
-  padding: 20px;
-  background: #fff;
-  witdh: 110px;
-}
-/* line 68, ../../../app/stylesheets/javelin.scss */
-section h1 {
-  font-size: 200%;
-}
-/* line 72, ../../../app/stylesheets/javelin.scss */
-section.main {
-  /*
-      margin:     10em;
-  */
-  padding: 20px;
-  width: 920px;
+  /*margin-bottom:    -15px;*/
 }
 
 /* Links */
-/* line 97, ../../../app/stylesheets/javelin.scss */
+/* line 114, ../../../app/stylesheets/javelin.scss */
 a {
   color: #09c;
   text-decoration: none;
 }
-/* line 101, ../../../app/stylesheets/javelin.scss */
+/* line 118, ../../../app/stylesheets/javelin.scss */
 a:hover {
   /*
       color:              #069;
@@ -812,26 +830,27 @@ a:hover {
   /*
     text-decoration:          underline;
   */
-  background: #325986;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001a31));
-  color: white;
-  border-radius: .25em;
-  -moz-border-radius: .25em;
-  -webkit-border-radius: .25em;
+  /*background:               #325986;*/
+  /*background:               -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001A31));*/
+  /*color:                    white;*/
+  /*border-radius:            .25em;*/
+  /*-moz-border-radius:       .25em;*/
+  /*-webkit-border-radius:    .25em;*/
+  color: #b23430;
 }
-/* line 109, ../../../app/stylesheets/javelin.scss */
+/* line 126, ../../../app/stylesheets/javelin.scss */
 a:visited {
   color: #069;
 }
-/* line 113, ../../../app/stylesheets/javelin.scss */
+/* line 130, ../../../app/stylesheets/javelin.scss */
 a:focus {
   color: white;
 }
-/* line 117, ../../../app/stylesheets/javelin.scss */
+/* line 134, ../../../app/stylesheets/javelin.scss */
 a:active {
   color: white;
 }
-/* line 121, ../../../app/stylesheets/javelin.scss */
+/* line 138, ../../../app/stylesheets/javelin.scss */
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
@@ -909,54 +928,68 @@ nav {
   float: right;
 }
 */
-/* line 145, ../../../app/stylesheets/javelin.scss */
-#site_nav {
-  float: right;
+/* line 162, ../../../app/stylesheets/javelin.scss */
+#site_nav, #footer_nav {
+  /*float:                right;*/
   background-color: white;
-  padding: 0 0.7em;
+  padding: 1em 5em 1em 1em;
+  /*width:                100%;*/
   white-space: nowrap;
+  display: block;
+  -moz-box-shadow: black 0 0 0.5em 0;
+  -webkit-box-shadow: black 0 0 0.5em 0;
+  -o-box-shadow: black 0 0 0.5em 0;
+  box-shadow: black 0 0 0.5em 0;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #222222), color-stop(100%, #444444));
+  background-image: -moz-linear-gradient(bottom, #222222 0%, #444444 100%);
+  background-image: linear-gradient(bottom, #222222 0%, #444444 100%);
   display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 1110px;
 }
-/* line 152, ../../../app/stylesheets/javelin.scss */
-#site_nav ul {
-  margin: 0;
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p136/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #site_nav, * html #footer_nav {
+  overflow-x: hidden;
+}
+/* line 173, ../../../app/stylesheets/javelin.scss */
+#site_nav ul, #footer_nav ul {
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
   padding: 0;
 }
-/* line 156, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li {
+/* line 179, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li, #footer_nav ul li {
   /*
         list-style-type:  none;
-        display:          inline-block;
         padding:          0.2em 0;
-        font-weight:                  bold;
   */
-  border-left: 1px solid #ccc;
+  /*display:          inline-block;*/
+  margin: 0 0 0 .25em;
+  border-left: 2px solid #ccc;
+  /*padding:                      0 0 0 .25em;*/
+  padding: 0 .75em;
   display: inline;
   list-style-type: none;
-  margin: 0 0 0 .25em;
-  padding: 0 0 0 .25em;
   text-align: right;
-  padding: 0 .75em;
+  font-size: 18px;
   white-space: pre;
 }
-/* line 172, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li:first-child {
+/* line 196, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li:first-child, #footer_nav ul li:first-child {
   border: none;
   padding-right: 0;
   margin-right: 0;
 }
-/* line 178, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li:last-child {
+/* line 202, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li:last-child, #footer_nav ul li:last-child {
   padding-right: 0;
   margin-right: 0;
 }
-/* line 183, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li a {
+/* line 207, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li a, #footer_nav ul li a {
   padding: 0 5px;
-  /*
-          font-weight:                bold;
-  */
-  font-size: 18px;
   /*font-family:                Helvetica, Arial, sans-serif;*/
   padding: .25em;
   color: #8F8F8F;
@@ -967,72 +1000,70 @@ nav {
           }
   */
 }
-/* line 199, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li a:hover {
+/* line 219, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li a:hover, #footer_nav ul li a:hover {
   /*
     text-decoration:          underline;
   */
-  background: #325986;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001a31));
-  color: white;
-  border-radius: .25em;
-  -moz-border-radius: .25em;
-  -webkit-border-radius: .25em;
+  /*background:               #325986;*/
+  /*background:               -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001A31));*/
+  /*color:                    white;*/
+  /*border-radius:            .25em;*/
+  /*-moz-border-radius:       .25em;*/
+  /*-webkit-border-radius:    .25em;*/
+  color: #b23430;
 }
-/* line 203, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li a:focus {
+/* line 223, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li a:focus, #footer_nav ul li a:focus {
   color: white;
 }
-/* line 207, ../../../app/stylesheets/javelin.scss */
-#site_nav ul li a:active {
+/* line 227, ../../../app/stylesheets/javelin.scss */
+#site_nav ul li a:active, #footer_nav ul li a:active {
   color: white;
 }
 
-/* line 216, ../../../app/stylesheets/javelin.scss */
+/* line 236, ../../../app/stylesheets/javelin.scss */
 .round {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
-/* line 222, ../../../app/stylesheets/javelin.scss */
-footer {
-  text-align: center;
-  width: 910px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-/* line 229, ../../../app/stylesheets/javelin.scss */
-footer nav {
-  float: none;
+/* line 245, ../../../app/stylesheets/javelin.scss */
+#footer_nav ul li {
+  font-size: 80%;
 }
 
-/* line 236, ../../../app/stylesheets/javelin.scss */
+/*footer {*/
+/*nav {*/
+/*float: none;*/
+/*}*/
+/*}*/
+/* line 260, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination {
   text-align: center;
   padding: .3em;
 }
-/* line 240, ../../../app/stylesheets/javelin.scss */
+/* line 264, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination a, .flickr_pagination span {
   padding: .2em .5em;
 }
-/* line 244, ../../../app/stylesheets/javelin.scss */
+/* line 268, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination span.disabled {
   color: #AAA;
 }
-/* line 248, ../../../app/stylesheets/javelin.scss */
+/* line 272, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination em {
   font-weight: bold;
   color: #FF0084;
 }
-/* line 253, ../../../app/stylesheets/javelin.scss */
+/* line 277, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination a {
   border: 1px solid #DDDDDD;
   color: #0063DC;
   text-decoration: none;
 }
-/* line 258, ../../../app/stylesheets/javelin.scss */
+/* line 282, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination a:hover, .flickr_pagination a:focus {
   /*
         border-color:       #003366;
@@ -1042,129 +1073,104 @@ footer nav {
   /*
     text-decoration:          underline;
   */
-  background: #325986;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001a31));
-  color: white;
-  border-radius: .25em;
-  -moz-border-radius: .25em;
-  -webkit-border-radius: .25em;
+  /*background:               #325986;*/
+  /*background:               -webkit-gradient(linear, 0% 0%, 0% 100%, from(#325986), to(#001A31));*/
+  /*color:                    white;*/
+  /*border-radius:            .25em;*/
+  /*-moz-border-radius:       .25em;*/
+  /*-webkit-border-radius:    .25em;*/
+  color: #b23430;
 }
-/* line 268, ../../../app/stylesheets/javelin.scss */
+/* line 292, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .page_info {
   color: #aaa;
   padding-top: .8em;
 }
-/* line 273, ../../../app/stylesheets/javelin.scss */
+/* line 297, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .prev_page, .flickr_pagination .next_page {
   border-width: 2px;
 }
-/* line 277, ../../../app/stylesheets/javelin.scss */
+/* line 301, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .prev_page {
   margin-right: 1em;
 }
-/* line 281, ../../../app/stylesheets/javelin.scss */
+/* line 305, ../../../app/stylesheets/javelin.scss */
 .flickr_pagination .next_page {
   margin-left: 1em;
 }
 
-/*
-  .flickr_pagination a, .flickr_pagination span, .digg_pagination em {
-    padding: .2em .5em; }
-  .flickr_pagination span.disabled {
-    color: #AAA; }
-  .flickr_pagination em {
-    font-weight: bold;
-    color: #FF0084; }
-  .flickr_pagination a {
-    border: 1px solid #DDDDDD;
-    color: #0063DC;
-    text-decoration: none; }
-    .flickr_pagination a:hover, .flickr_pagination a:focus {
-      border-color: #003366;
-      background: #0063DC;
-      color: white; }
-  .flickr_pagination .page_info {
-    color: #aaa;
-    padding-top: .8em; }
-  .flickr_pagination .prev_page, .flickr_pagination .next_page {
-    border-width: 2px; }
-  .flickr_pagination .prev_page {
-    margin-right: 1em; }
-  .flickr_pagination .next_page {
-    margin-left: 1em; }
-*/
-/* line 313, ../../../app/stylesheets/javelin.scss */
+/* line 311, ../../../app/stylesheets/javelin.scss */
 h1.micropost {
   margin-bottom: 0.3em;
 }
 
-/* line 318, ../../../app/stylesheets/javelin.scss */
+/* line 316, ../../../app/stylesheets/javelin.scss */
 table.microposts {
   margin-top: 1em;
 }
-/* line 321, ../../../app/stylesheets/javelin.scss */
+/* line 319, ../../../app/stylesheets/javelin.scss */
 table.microposts tr {
   height: 70px;
 }
-/* line 324, ../../../app/stylesheets/javelin.scss */
+/* line 322, ../../../app/stylesheets/javelin.scss */
 table.microposts tr td.gravatar {
   border-top: 1px solid #ccc;
   vertical-align: top;
   width: 50px;
 }
-/* line 330, ../../../app/stylesheets/javelin.scss */
+/* line 328, ../../../app/stylesheets/javelin.scss */
 table.microposts tr td.micropost {
   border-top: 1px solid #ccc;
   vertical-align: top;
   padding-top: 10px;
 }
-/* line 335, ../../../app/stylesheets/javelin.scss */
+/* line 333, ../../../app/stylesheets/javelin.scss */
 table.microposts tr td.micropost span.timestamp {
   display: block;
   font-size: 85%;
   color: #666;
 }
 
-/* line 346, ../../../app/stylesheets/javelin.scss */
+/* line 344, ../../../app/stylesheets/javelin.scss */
 div.user_info img {
   padding-right: 0.1em;
 }
-/* line 350, ../../../app/stylesheets/javelin.scss */
+/* line 348, ../../../app/stylesheets/javelin.scss */
 div.user_info a {
   text-decoration: none;
 }
-/* line 354, ../../../app/stylesheets/javelin.scss */
+/* line 352, ../../../app/stylesheets/javelin.scss */
 div.user_info span.user_name {
   position: absolute;
 }
-/* line 358, ../../../app/stylesheets/javelin.scss */
+/* line 356, ../../../app/stylesheets/javelin.scss */
 div.user_info span.microposts {
   font-size: 80%;
 }
 
-/* line 366, ../../../app/stylesheets/javelin.scss */
+/* line 364, ../../../app/stylesheets/javelin.scss */
 form.new_micropost {
   margin-bottom: 2em;
 }
 
-/* line 370, ../../../app/stylesheets/javelin.scss */
+/* line 368, ../../../app/stylesheets/javelin.scss */
 form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
 }
 
-/* line 377, ../../../app/stylesheets/javelin.scss */
+/* line 375, ../../../app/stylesheets/javelin.scss */
 .profile img.gravatar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
 
-/* line 383, ../../../app/stylesheets/javelin.scss */
+/* line 381, ../../../app/stylesheets/javelin.scss */
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
-/* line 387, ../../../app/stylesheets/javelin.scss */
+/* line 385, ../../../app/stylesheets/javelin.scss */
 .field_with_errors {
   margin-top: 10px;
   padding: 2px;
@@ -1172,12 +1178,12 @@ div.field, div.actions {
   display: table;
 }
 
-/* line 394, ../../../app/stylesheets/javelin.scss */
+/* line 392, ../../../app/stylesheets/javelin.scss */
 .field_with_errors label {
   color: #fff;
 }
 
-/* line 398, ../../../app/stylesheets/javelin.scss */
+/* line 396, ../../../app/stylesheets/javelin.scss */
 #error_explanation {
   width: 400px;
   border: 2px solid red;
@@ -1187,7 +1193,7 @@ div.field, div.actions {
   background-color: #f0f0f0;
 }
 
-/* line 407, ../../../app/stylesheets/javelin.scss */
+/* line 405, ../../../app/stylesheets/javelin.scss */
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
@@ -1198,14 +1204,14 @@ div.field, div.actions {
   color: #fff;
 }
 
-/* line 417, ../../../app/stylesheets/javelin.scss */
+/* line 415, ../../../app/stylesheets/javelin.scss */
 #error_explanation p {
   color: #333;
   margin-bottom: 0;
   padding: 5px;
 }
 
-/* line 423, ../../../app/stylesheets/javelin.scss */
+/* line 421, ../../../app/stylesheets/javelin.scss */
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;

@@ -23,14 +23,14 @@ Javelin::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
-#  if "irb" == $0
-#  end
-  if $0 == "irb"
-    ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+#  puts "in development.rb, $0 is #{$0}"
+  if $0 == "script/rails"
+    ActiveRecord::Base.logger     = Logger.new(STDOUT)
     ActionController::Base.logger = Logger.new(STDOUT)
     config.logger = Logger.new(STDOUT)
   else
-    config.logger = Logger.new(Rails.root.join("log",Rails.env + ".log"),3,5*1024*1024)
+    config.logger = Logger.new( Rails.root.join( "log", Rails.env + ".log" ), 3, 5 * 1024 * 1024 )
   end
 
   config.log_level = Logger::DEBUG # In any environment initializer, or
